@@ -20,7 +20,7 @@ export default function Navbar() {
     return (
         <header className="bg-white drop-shadow-lg">
             <nav aria-label="Global" className="grid-cols-3 mx-auto flex max-w-7xl items-center justify-center p-2 lg:px-8">
-                <div className="col-span-3 lg:flex-1">
+                <div className="col-span-3 ">
                     <Link href="/" className="-m-1.5 p-1.5">
                         <span className="sr-only">Belong Here Theater</span>
                        <Image
