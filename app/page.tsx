@@ -1,17 +1,13 @@
-import { createClient } from '@/utils/supabase/server'
-import { cookies } from 'next/headers'
+import Navbar from "@/component/Navbar";
+import Card from "@/component/ui/Card";
 
 export default async function Home() {
-  const cookieStore = await cookies()
-  const supabase = createClient(cookieStore)
-
-  const { data: todos } = await supabase.from('todos').select()
 
   return (
-      <ul>
-        {todos?.map((todo) => (
-            <li key={todo.id}>{todo.name}</li>
-        ))}
-      </ul>
+    <>
+      <div className={"bg-linear-150 from-magenta to-myCyan h-screen w-screen"}>
+        <Card title={"Under Construction"} body={"We will be back soon!"}></Card>
+      </div>
+    </>
   )
 }

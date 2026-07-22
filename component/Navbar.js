@@ -10,13 +10,9 @@ import {
     Bars3Icon,
     XMarkIcon,
 } from '@heroicons/react/24/outline'
-import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
 import Image from 'next/image';
 import Link from "next/link";
-const callsToAction = [
-    { name: 'Watch demo', href: '#', icon: PlayCircleIcon },
-    { name: 'Contact sales', href: '#', icon: PhoneIcon },
-]
+
 
 export default function Navbar() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -30,9 +26,9 @@ export default function Navbar() {
                        <Image
                        src={'/logos/light-mode/Horizontal_LM_1.png'}
                        alt={'Belong Here Theater'}
-                       width={300}
-                       height={300}
-                       className={"col-span-1"}
+                       width={200}
+                       height={200}
+                       className={"col-span-1 lg:w-64 lg:justify-center lg:col-span-1"}
                        />
                     </Link>
                 </div>
@@ -46,7 +42,7 @@ export default function Navbar() {
                         <Bars3Icon aria-hidden="true" className="size-6" />
                     </button>
                 </div>
-                <PopoverGroup className="hidden lg:flex lg:gap-x-12 col-span-2">
+                <PopoverGroup className="hidden lg:flex lg:gap-x-12 col-span-2 font-serif">
 
                     <a href="#" className="text-sm/6 font-semibold text-gray-900">
                         About Us
@@ -59,7 +55,7 @@ export default function Navbar() {
                     </a>
                 </PopoverGroup>
                 <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-                    <Link href="/login" className="text-sm/6 font-semibold text-gray-900">
+                    <Link href="/login" className="text-sm/6 font-semibold font-serif text-gray-900">
                         Log in <span aria-hidden="true">&rarr;</span>
                     </Link>
                 </div>
@@ -69,10 +65,10 @@ export default function Navbar() {
                 <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
                     <div className="flex items-center justify-between">
                         <a href="#" className="-m-1.5 p-1.5">
-                            <span className="sr-only">Your Company</span>
+                            <span className="sr-only">Belong Here Theater</span>
                             <img
-                                alt=""
-                                src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600"
+                                alt="Belong Here Theater"
+                                src="/logos/light-mode/SecondaryGraphic_LM_1.png"
                                 className="h-8 w-auto"
                             />
                         </a>
