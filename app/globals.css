@@ -1,8 +1,8 @@
 
 @import "tailwindcss";
 
-body {
-  background-image: url("/public/backdrop.png");
+.Container {
+  background-image: url("/backdrop.jpeg");
   background-size: cover;
 }
 

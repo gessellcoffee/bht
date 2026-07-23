@@ -17,6 +17,9 @@ module.exports = {
             },
             borderRadius: {
                 '4xl': '2rem',
+            },
+            backgroundImage: {
+                bannerImg: "url('/backdrop.png')"
             }
         }
     }
