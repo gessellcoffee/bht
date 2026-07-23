@@ -29,6 +29,9 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
+    <head title={"Belong Here Theater"}>
+      <link rel={'icon'} href={'/favicon.ico'} />
+    </head>
 
       <body className="min-h-full flex flex-col bg-primary">
       <Navbar/>
