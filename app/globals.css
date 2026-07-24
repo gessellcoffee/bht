@@ -1,9 +1,27 @@
 
 @import "tailwindcss";
 
-.Container {
-  background-image: url("/backdrop.jpeg");
-  background-size: cover;
+.Card {
+  outline-width: 0.001rem;
+  outline-style: solid;
+  outline-color: gray;
+
+}
+
+.active-link {
+  background: -webkit-linear-gradient(135deg, #ec008c, #00aeef);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  --tw-font-weight: var(--font-weight-bold) /* 700 */;
+  font-weight: var(--font-weight-bold) /* 700 */;
+}
+
+.link{
+  font-size: var(--text-sm) /* 0.875rem = 14px */;
+  line-height: var(--tw-leading, var(--text-sm--line-height) /* calc(1.25 / 0.875) ≈ 1.428571 */);
+  --tw-font-weight: var(--font-weight-semibold) /* 600 */;
+  font-weight: var(--font-weight-semibold) /* 600 */;
+  color: var(--color-gray-900) /* oklch(21% 0.034 264.665) = #101828 */;
 }
 
 @theme {

@@ -30,10 +30,13 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
 
-      <body className="min-h-full flex flex-col bg-primary">
+      <body className="bg-linear-135 from-magenta to-myCyan bg-cover bg-fixed ">
       <Navbar/>
+      <div className="delay-300 duration-600 taos:scale-[0.6] taos:opacity-0" data-taos-offset="400">
+        {children}
+      </div>
 
-      {children}</body>
+      </body>
     </html>
   );
 }
