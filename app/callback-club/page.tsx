@@ -14,7 +14,7 @@ export default async function CallbackClubPage() {
                   body={"Alongside the peer feedback sessions of Callback Club are the free monthly workshops. " +
                       "These workshops are run by working artists (often if not always from the Twin Cities) that are" +
                       " passionate about a practice or technique that has helped them grow or develop their own skills." +
-                      " We've had clowns, shakespeare enthusiasts, movement specialists, and more come to Callback CLub" +
+                      " We've had clowns, shakespeare enthusiasts, movement specialists, and more come to Callback Club" +
                       " to share their craft."}
             />
 
