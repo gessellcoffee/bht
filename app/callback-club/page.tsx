@@ -1,4 +1,3 @@
-import Navbar from "@/component/Navbar";
 import Card from "@/component/ui/Card";
 
 export default async function CallbackClubPage() {
@@ -6,7 +5,7 @@ export default async function CallbackClubPage() {
     return (
         <>
             <Card title={"Callback Club"}
-                  body={"Callback Club is a bimonthly artists exercise where participants can" +
+                  body={"Callback Club is a bimonthly artists exercise where participants can " +
                       "run their audition monologues, solos/songs, scenes with partners, or practice cold reads for " +
                       "peer feedback from other performers."}
             />
